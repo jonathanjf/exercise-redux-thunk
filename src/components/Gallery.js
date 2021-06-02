@@ -10,7 +10,7 @@ class Gallery extends Component {
       <div className="gallery-container">
         { isLoading && <div>LOADING...</div> }
         { useDefaultImg && <img src={ defaultCat } alt="default cat" /> }
-        { !isLoading && !useDefaultImg && <img src={ imgPath } alt="random cat" /> }
+        { !isLoading && !useDefaultImg && <img src={ imgPath } style={{width: '200px'}} alt="random cat" /> }
       </div>
     );
   }
